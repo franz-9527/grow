@@ -1,0 +1,55 @@
+# Local credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.local-backups/
+.agents/
+.codex/
+.aws/
+
+# Runtime data, personal references, and database exports
+backend/data/*
+!backend/data/.gitkeep
+*.db
+*.db-*
+*.sqlite*
+*.sql
+*.zip
+*.tar*
+/截屏/
+/*.png
+/*.jpg
+/种菜游戏.txt
+
+# Generated builds and historical release packages
+backend/static/client/
+deploy/*
+!deploy/*.py
+!deploy/*.sh
+!deploy/*.example
+!deploy/tests/
+frontend/.openai/hosting.json
+frontend/public/preview-data.json
+
+# Dependencies and caches
+**/node_modules/
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.npm-cache/
+**/.wrangler/
+**/.next/
+**/.vinext/
+**/dist/
+**/outputs/
+**/work/
+*.py[cod]
+*.tsbuildinfo
+*.log
+.DS_Store
+Thumbs.db
